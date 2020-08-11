@@ -1,0 +1,51 @@
+:root {
+  --color-primary-dark: #96DDFF;
+  --color-primary-light: #89FFE6;
+  --color-secondary: #FFBF70;
+  --color-secondary-dark: #e6a85e;
+  --color-green: #7DFF99;
+  --color-red: #FFA3AE;
+  --color-background: #dbe3e6;
+  --color-title: #c5ecf8;
+  --color-text: #f2fcff;
+  --color-primary: #318c94;
+
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 500 1.6rem Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 80%;
+  }
+}
