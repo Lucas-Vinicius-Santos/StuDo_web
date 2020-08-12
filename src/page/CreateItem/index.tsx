@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import purpleHeartIcon from '../../assets/image/icons/purple-heart.svg'
+
 import HeaderPage from '../../components/HeaderPage';
 
 import './style.css'
@@ -8,26 +10,30 @@ import './style.css'
 function CreateItem () {
   return (
     <div id="create-item-page">
-      <div id="create-item-page-content" className="container">
 
         <HeaderPage title="Criar novo item" />
         
         <main>
           <fieldset>
+
             <div className="content">
-              <h1>Parece que você não tem permissão para criar um novo item :/</h1>
+              <legend>Parece que você não tem permissão para criar um novo item :/</legend>
               <p>Deseja nos enviar uma sugestão?</p>
               <textarea></textarea>
             </div>
-
-            <div className="input-block">
-              <Link to="/" className="inputButton" >Voltar ao inicio</Link>
-              <button className="inputButton" >Enviar</button>
-            </div>
+            
           </fieldset>
+          
+          <div className="input-block">
+              <p>
+                Obrigado pela contribuição 
+                <span> <img src={purpleHeartIcon} alt="coração"/> </span> 
+              </p>
+              <button className="inputButton" >Enviar sugestão</button>
+            </div>
+
         </main>
  
-      </div>
     </div>
     
   )

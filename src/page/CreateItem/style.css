@@ -1,56 +1,101 @@
-
 #create-item-page {
-  background-color: var(--color-background);
-
   width: 100vw;
   height: 100vh;
 }
-#create-item-page-content #header-page .header-content {
+
+#create-item-page #header-page .header-content {
   margin-bottom: 6.4rem;
 }
 
-#create-item-page-content main {
+#create-item-page main {
   background: #fff;
 
   width: 100%;
   max-width: 74rem;
 
-  margin: -3.2rem auto 3.2rem;
-  /* padding-top: 6.4rem; */
-
   border-radius: 0.8rem;
+
+  margin: -3.2rem auto 3.2rem;
+  padding-top: 6.4rem;
+
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
-#create-item-page-content main fieldset {
+
+#create-item-page main fieldset {
   border: 0;
   padding: 0 2.4rem;
 }
 
-#create-item-page-content .content h1 {
+#create-item-page .content legend {
+  font: 700 3.4rem Archivo;
+  color: rgb(21, 32, 46);
+  line-height: 4.2rem;
+  padding-bottom: 2.4rem;
+}
+
+#create-item-page .content p {
+  font-size: 1.8rem;
   color: rgb(21, 32, 46);
 }
 
-#create-item-page-content .content p {
-  color: rgb(21, 32, 46);
+#create-item-page .content textarea {
+  background-color: rgb(223, 230, 233);
+  border: 1px solid var(--color-primary-dark);
+
+  width: 100%;
+  min-height: 8rem;
+  height: 8rem;
+  resize: vertical;
+
+  margin: 0.8rem 0;
+  border-radius: 0.8rem;
+
+  outline: 0;
+  transition: .2s;
 }
+#create-item-page .content textarea:focus {
+  height: 10rem;
+}
+
 
 #create-item-page .input-block {
+  background: rgb(225, 233, 235);
+
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.4rem;  
 }
+
+#create-item-page .input-block p {
+  font: 400 1.6rem Poppins;
+}
+
 
 #create-item-page .inputButton {
   background-color: var(--color-secondary);
 
   height: 10.2rem;
+  width: 22rem;
 
   border: 0;
   border-radius: 0.8rem;
+  margin: 2.4rem 0 3.6rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   transition: background 0.2s;
+  cursor: pointer;
+  outline: 0;
+
+  color: var(--color-text);
+  font: 700 1.6rem Poppins;
 }
 
+#create-item-page .inputButton:hover {
+  background-color: var(--color-secondary-dark);
+}
