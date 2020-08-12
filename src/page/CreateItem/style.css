@@ -1,0 +1,56 @@
+
+#create-item-page {
+  background-color: var(--color-background);
+
+  width: 100vw;
+  height: 100vh;
+}
+#create-item-page-content #header-page .header-content {
+  margin-bottom: 6.4rem;
+}
+
+#create-item-page-content main {
+  background: #fff;
+
+  width: 100%;
+  max-width: 74rem;
+
+  margin: -3.2rem auto 3.2rem;
+  /* padding-top: 6.4rem; */
+
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+#create-item-page-content main fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+}
+
+#create-item-page-content .content h1 {
+  color: rgb(21, 32, 46);
+}
+
+#create-item-page-content .content p {
+  color: rgb(21, 32, 46);
+}
+
+#create-item-page .input-block {
+  display: flex;
+  justify-content: center;
+}
+
+#create-item-page .inputButton {
+  background-color: var(--color-secondary);
+
+  height: 10.2rem;
+
+  border: 0;
+  border-radius: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background 0.2s;
+}
+

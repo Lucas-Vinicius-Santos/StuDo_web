@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import landingImg from '../../assets/image/landingImg.png'
 
@@ -19,13 +20,13 @@ function Landing() {
 
         <div className="input-block">
 
-          <a href="#" className="inputButton" id="ToDoList">
+          <Link to="/to-do-list" className="inputButton" id="ToDoList">
             <p className="inputButtonText">Ver Lista</p>
-          </a>
+          </Link>
 
-          <a href="#" className="inputButton" id="CreateItem">
+          <Link to="/criar-novo-item" className="inputButton" id="CreateItem">
             <p className="inputButtonText">Novo Item</p>
-          </a>
+          </Link>
         </div>
 
       </div>

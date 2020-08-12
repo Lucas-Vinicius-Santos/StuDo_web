@@ -9,35 +9,35 @@
   justify-content: center;
 }
 
-#content {
+#landing-page-content #content {
   position: relative;
   top: 5rem;
 }
 
-#content h1 {
+#landing-page-content #content h1 {
   font: 700 6.4rem Archivo;
   text-align: center;
 
 }
 
-#content p {
+#landing-page-content #content p {
   font: 400 1.8rem Poppins;
   color: #fff;
   text-align: center;
   top: -1rem;
 }
 
-.heroImg {
+#landing-page-content .heroImg {
   max-width: 100%;
   height: auto;
 }
 
-.input-block {
+#landing-page-content .input-block {
   display: flex;
   justify-content: center;
 }
 
-.inputButton {
+#landing-page-content .inputButton {
   background-color: var(--color-secondary);
   position: relative;
   top: -4rem;
@@ -55,15 +55,15 @@
   transition: background 0.2s;
 }
 
-.inputButton:hover {
+#landing-page-content .inputButton:hover {
   background-color: var(--color-secondary-dark);
 }
 
-.input-block a:first-child {
+#landing-page-content .input-block a:first-child {
   margin-right: 1.6rem;
 }
 
-.inputButtonText {
+#landing-page-content .inputButtonText {
   color: var(--color-text);
   font: 700 1.8rem Poppins;
 }
@@ -85,33 +85,33 @@
     ;
   }
   
-  #content {
+  #landing-page-content #content {
     grid-area: logo;
 
     align-self: center;
     text-align: left;
     margin: 0;
   }
-  #content h1 {
+  #landing-page-content #content h1 {
     line-height: 10rem;
 
   }
-  #content p {
+  #landing-page-content #content p {
     text-align: initial;
   }
 
-  .heroImg {
+  #landing-page-content .heroImg {
     grid-area: hero;
 
     height: auto;
     align-self: center;
   }
-  .input-block {
+  #landing-page-content .input-block {
     grid-area: button;
     justify-content: flex-start;
 
   }
-  .inputButton {
+  #landing-page-content .inputButton {
     justify-content: center;
     position: initial;
 
@@ -120,7 +120,7 @@
     top: -2rem;
 
   }
-  .inputButtonText {
+  #landing-page-content .inputButtonText {
     font-size: 2.4rem;
   }
 
