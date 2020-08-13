@@ -1,4 +1,4 @@
-# StuDO
+# StuDo
 
 ## Table of Contents
 
