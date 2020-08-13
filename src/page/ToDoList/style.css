@@ -1,0 +1,22 @@
+#to-do-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+#to-do-page #header-page .header-content {
+  margin-bottom: 6.4rem;
+}
+
+#to-do-page main {
+  background: #fff;
+
+  width: 100%;
+  max-width: 74rem;
+
+  border-radius: 0.8rem;
+
+  margin: -3.2rem auto 3.2rem;
+  padding: 1.4rem;
+
+  overflow: hidden;
+}

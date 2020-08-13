@@ -13,7 +13,7 @@ interface HeaderProps {
 const HeaderPage: React.FC<HeaderProps> = ({ title }) => {
   return (
     <div id="header-page" className="container">
-      <header id="header-page">
+      <header className="header-page">
         <div className="top-bar-container">
 
           <Link to="/">

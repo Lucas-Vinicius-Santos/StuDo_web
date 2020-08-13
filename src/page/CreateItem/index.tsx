@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import purpleHeartIcon from '../../assets/image/icons/purple-heart.svg'
 

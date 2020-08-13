@@ -1,0 +1,56 @@
+.blue {
+  background-color: var(--color-primary-light);
+}
+.green {
+  background-color: var(--color-green);
+}
+.orange {
+  background-color: var(--color-secondary);
+}
+.red {
+  background-color: var(--color-red);
+}
+
+#item-list {
+  margin-bottom: 3.4rem;
+}
+
+#item-list .header-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 2.4rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+#item-list .header-item h1 {
+  font: 700 2.4rem Archivo;
+  color: black;
+}
+
+#item-list .body-item {
+  background: rgb(237, 246, 248);
+}
+
+#item-list .body-item .input-block{
+  padding: 2.4rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#item-list .body-item .input-block input{
+  width: 5rem;
+  height: 5rem;
+
+  border-bottom: 0.8rem;
+  border: 1px solid var(--color-primary-dark);
+}
+
+#item-list .body-item footer {
+  padding-bottom: 2.4rem;
+
+  text-align: center;
+}
