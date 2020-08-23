@@ -12,31 +12,31 @@ function ToDoList() {
 
       <main>
         <ItemList
+          variant = 'red'
+          subject = 'Matemática'
+          description = 'Descrição da atividade'
+          day = "15/09/20"
+          time = "20:00"
+        />
+        <ItemList
+          variant = 'orange'
+          subject = 'Geografia'
+          description = 'Descrição da atividade'
+          day = "16/09/20"
+          time = "20:00"
+        />
+        <ItemList
           variant = 'green'
           subject = 'Matemática'
-          description = 'Em folha a4'
-          day = "15/08/20"
+          description = 'Descrição da atividade'
+          day = "18/09/20"
           time = "20:00"
         />
         <ItemList
           variant = 'blue'
           subject = 'Geografia'
-          description = 'Em folha a4'
-          day = "15/08/20"
-          time = "20:00"
-        />
-        <ItemList
-          variant = 'orange'
-          subject = 'Matemática'
-          description = 'Em folha a4'
-          day = "15/08/20"
-          time = "20:00"
-        />
-        <ItemList
-          variant = 'red'
-          subject = 'Geografia'
-          description = 'Em folha a4'
-          day = "15/08/20"
+          description = 'Descrição da atividade'
+          day = "20/09/20"
           time = "20:00"
         />
       </main>
