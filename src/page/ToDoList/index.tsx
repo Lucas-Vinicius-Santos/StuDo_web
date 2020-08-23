@@ -1,44 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-import ItemList from '../../components/ItemList';
+import ItemList, { Activity } from '../../components/ItemList';
 import HeaderPage from '../../components/HeaderPage';
+
+import api from '../../service/api';
 
 import './style.css';
 
 function ToDoList() {
+  
+  const [activity, setActivity] = useState([])
+
+  async function getAllActivities() {
+    const response = await api.get('to-do-list')
+
+    console.log(response, response.data);
+
+    setActivity(response.data)
+  }
+
+  useEffect(() => {
+    getAllActivities()
+  }, [])
+
   return (
     <div id="to-do-page">
       <HeaderPage title="Lista de atividades" />
 
       <main>
-        <ItemList
-          variant = 'red'
-          subject = 'Matemática'
-          description = 'Descrição da atividade'
-          day = "15/09/20"
-          time = "20:00"
-        />
-        <ItemList
-          variant = 'orange'
-          subject = 'Geografia'
-          description = 'Descrição da atividade'
-          day = "16/09/20"
-          time = "20:00"
-        />
-        <ItemList
-          variant = 'green'
-          subject = 'Matemática'
-          description = 'Descrição da atividade'
-          day = "18/09/20"
-          time = "20:00"
-        />
-        <ItemList
-          variant = 'blue'
-          subject = 'Geografia'
-          description = 'Descrição da atividade'
-          day = "20/09/20"
-          time = "20:00"
-        />
+
+        {
+          activity.map((activity: Activity) => {
+            return (
+              <ItemList
+                key={activity.id}
+                activity = {activity}
+              />
+            )
+          })
+        }
+        
       </main>
 
     </div>

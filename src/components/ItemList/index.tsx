@@ -2,15 +2,20 @@ import React from 'react';
 
 import './style.css'
 
-interface Props {
+export interface Activity {
   variant: 'green' | 'blue' | 'orange' | 'red';
+  id: number;
   subject: string;
   description: string;
   day: string;
   time: string;
 }
 
-const ItemList: React.FC<Props> = (Props) => {
+interface ActivityProps {
+  activity: Activity;
+}
+
+const ItemList: React.FC<ActivityProps> = ({ activity }) => {
 
   const { 
     variant, 
@@ -18,7 +23,7 @@ const ItemList: React.FC<Props> = (Props) => {
     description, 
     day,
     time, 
-  } = Props
+  } = activity
 
   return (
     <article id="item-list" className="container">
