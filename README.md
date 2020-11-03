@@ -13,6 +13,7 @@
 ## About The Project
 
 #### I developed this project to organize myself with the activities of my school
+### You can see the website through this link: https://studo-app.herokuapp.com/
 
 <img src="./gitImg/Landing.png" width="800px">
 <img src="./gitImg/listItems.gif" width="800px">
